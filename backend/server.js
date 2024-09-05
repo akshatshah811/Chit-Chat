@@ -49,7 +49,7 @@ const io = require('socket.io')(server,{
     pingTimeout:60000,
     //to avoid cross origin errors
     cors:{
-        origin:"http://localhost:3000", 
+        origin:"https://chit-chat-8gsg.onrender.com/", 
     },
 });
 
