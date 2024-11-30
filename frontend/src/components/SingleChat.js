@@ -211,6 +211,7 @@ const SingleChat = ({fetchAgain, setFetchAgain}) => {
                         <ScrollableChat messages={messages}/>
                     </div>
                 )}
+
                 <FormControl onKeyDown={sendMessage} isRequired mt={3}>
                     {isTyping?<div>
                         <Lottie
@@ -226,14 +227,16 @@ const SingleChat = ({fetchAgain, setFetchAgain}) => {
                         onChange={typingHandler}
                         value={newMessage}
                     />
-                    {/* <IconButton 
-                    display="flex"
-                    ml={2}
-                    bg=" #7BB274"
-                    icon={<ArrowRightIcon/>}
-                    onClick={sendMessage}
-                    /> */}
+                   {/* <IconButton 
+                        display="flex"
+                        ml={2}
+                        bg=" #7BB274"
+                        icon={<ArrowRightIcon/>}
+                        onClick={sendMessage}
+                    />   */}
                 </FormControl>
+                      
+
             </Box>
         </>
     ) : (
